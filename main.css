@@ -1,0 +1,492 @@
+*{
+	margin:0;
+	padding:0;
+	background-color:#f6f6f6;
+	list-style: none;
+	font-size: 15px;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+/*导航栏*/
+.header{
+	width:100%;
+	background-color:#fff;
+	border-bottom: solid 1px #f0f2f7;
+}
+.wrapper{
+	height:52px;
+	width:1000px;
+	/*padding:0 16;*/
+	margin:0 auto;
+	align-items: center;
+	border:solid 1px transparent;
+	background-color:#fff;
+}
+/*左侧菜单*/
+.wrapper .caidan li{
+	width:30px;
+	height:30px;
+	color:#8590A6;
+	float:left;
+	line-height: 52px;
+	padding:0 15px;
+	cursor:pointer;
+	background-color:#fff;
+}
+.wrapper .caidan .zhihu{
+	width:64px;
+	height:30px;
+	color:#0084ff;
+	font-size:30px;
+}
+.wrapper .caidan .shouye{
+	color:#444;
+}
+.wrapper .caidan .item:hover{
+	color:#175199;
+}
+/*中间搜索框*/
+.wrapper .search{
+	width:400px;
+	height:34px;
+	/*border:solid 1px black;*/
+	margin:9px auto;
+}
+.wrapper .search .search-bar{
+	width:280px;
+	height:24px;
+	padding:4px 10px 4px 16px;
+	border:1px solid #ebebeb;
+	background-color: #f6f6f6;
+	border-radius: 3px;
+	margin:0;
+}
+.wrapper .search .search-bar input{
+	width:298px;
+	height:24px;
+	border:none;
+	background: transparent;
+}
+::-webkit-input-placeholder{
+	color:#8590A6;
+}
+.wrapper .search .search-bar input:focus{
+	outline:none;
+}
+.wrapper .search .search-bar i{
+	position: absolute;
+	top:20px;
+	left:715px;
+	color:#8590A6;
+}
+.wrapper .search button{
+	color: #fff;
+    background-color: #0084ff;
+    height:34px;
+    padding:0 14px;
+    margin-left:16px;
+    border:1px solid;
+    border-radius: 3px;
+    display:block;
+    float:right;
+    cursor:pointer;
+}
+.wrapper .search button:hover{
+	background-color:#0077e6;
+}
+.header .wrapper .right{
+	width:310px;
+	height:31px;
+	/*border:solid 1px black;*/
+	float:right;
+	margin-top:8px;
+	background-color: white;
+}
+.header .wrapper .right i{
+	display:block;
+	float:right;
+	margin:0 20px;
+	color:#8590a6;
+	font-size:25px;
+	background-color: white;
+	cursor:pointer;
+	line-height: 31px;
+}
+.header .wrapper .right i:hover{
+	color:#7090a0;
+}
+.header .wrapper .right img{
+	float:right;
+	width:30px;
+	margin-left:20px;
+	cursor:pointer;
+}
+/*内容*/
+.main{
+	width:1000px;
+	/*height:1000px;*/
+	margin:10px auto;
+	/*border:solid 1px black;*/
+	background-color: white;
+	position:relative;
+}
+/*左侧内容*/
+.main .left{
+	border: solid 1px #f0f2f7;
+}
+.main .left span{
+	font-weight:bold;
+	background-color:white;
+}
+.main .left .title:hover{
+	color:#175199;
+}
+.main .left .content:hover{
+	color:gray;
+}
+/*头部菜单*/
+.main .left .head{
+	width:694px;
+	height:58px;
+	/*border:solid 1px black;*/
+	background-color:white;
+	border-bottom: solid 1px #f0f2f7;
+}
+.main .left .head ul li{
+	float:left;
+	width:32px;
+	padding:18px 0;
+	margin:0 20px;
+	cursor:pointer;
+	background-color:white;
+}
+.main .left .head .select{
+	font-weight: bold;
+	border-bottom:solid 3px #0084ff;
+}
+/*模块一*/
+.main .left .content i{
+	background-color: transparent;
+}
+.main .left .content .all{
+	color:#175199;
+	font-weight:normal;
+}
+.main .left .content .all:hover{
+	color:gray;
+}
+.main .left .box1{
+	width:654px;
+	height:186px;
+	padding:20px;
+	/*border:solid 1px black;*/
+	border-bottom: solid 1px #f0f2f7;
+	position:relative;
+	background-color:white;
+}
+.main .left .box1 p{
+	font-size:18px;
+	font-weight:bold;
+	background-color:white;
+	cursor:pointer;
+}
+.main .left .box1 img{
+	width:190px;
+	height:105px;
+	margin-top:20px;
+	border-radius:4px;
+	cursor:pointer;
+}
+.main .left .box1 .content1{
+	width:446px;
+	height:98px;
+	/*border:solid 1px black;*/
+	position:absolute;
+	left:230px;
+	top:70px;
+	background-color:white;
+	cursor:pointer;
+	line-height:1.6;
+}
+.action{
+	width:614px;
+	height:32px;
+	/*border:1px solid black;*/
+	margin-top:5px;
+	background-color: white;
+} 
+.action div{
+	float:left;
+	background-color: white;
+	color:#8590a6;
+	cursor:pointer;
+	/*margin-left:10px;*/
+}
+.action .down{
+	margin-left:5px;
+}
+.comment,
+.share,
+.like,
+.thank,
+.more{
+	margin-left:20px;
+	line-height: 30px;
+}
+.action div:hover{
+	color:#76839b;
+}
+.action div i{
+	background-color: white;
+	font-size:13px;
+}
+.action .up{
+	width:80px;
+	height:30px;
+	padding:0 12px;
+	border:solid 1px transparent;
+}
+.action .down{
+	height:30px;
+	width:30px;
+	
+}
+.action .up,
+.action .down{
+	background-color: rgba(0,132,255,.1);
+	border-radius: 3px;
+}
+.up:hover{
+	background-color: rgba(0,132,255,.15);
+}
+.down:hover{
+	background-color: rgba(0,132,255,.15);
+}
+.action .up i{
+	color:#0084ff;
+	background-color: transparent;
+}
+.action .up span{
+	font-size:13px;
+	color:#0084ff;
+	background-color: transparent;
+	line-height: 30px;
+}
+.action .down i{
+	color:#0084ff;
+	background-color: transparent;
+	line-height: 30px;
+	margin-left:7px;
+}
+/*模块二*/
+.main .box2{
+	width:654px;
+	height:186px;
+	padding:20px;
+	/*border:solid 1px black;*/
+	border-bottom: solid 1px #f0f2f7;
+	position:relative;
+	background-color:white;
+}
+.main .left .box2 p{
+	font-size:18px;
+	font-weight:bold;
+	background-color:white;
+	cursor:pointer;
+}
+.main .left .box2 img{
+	width:190px;
+	height:105px;
+	margin-top:20px;
+	border-radius:4px;
+	cursor:pointer;
+}
+.main .left .box2 .content2{
+	width:446px;
+	height:98px;
+	/*border:solid 1px black;*/
+	position:absolute;
+	left:230px;
+	top:70px;
+	background-color:white;
+	cursor:pointer;
+	line-height:1.6;
+}
+/*模块三*/
+.main .box3{
+	width:654px;
+	height:117px;
+	padding:20px;
+	/*border:solid 1px black;*/
+	border-bottom: solid 1px #f0f2f7;
+	position:relative;
+	background-color:white;
+}
+.main .left .box3 p{
+	font-size:18px;
+	font-weight:bold;
+	background-color:white;
+	cursor:pointer;
+}
+.main .left .box3 .content3{
+	width:654px;
+	height:50px;
+	/*border:solid 1px black;*/
+	position:absolute;
+	top:55px;
+	background-color:white;
+	cursor:pointer;
+	line-height:1.6;
+}
+#three{
+	position: absolute;
+	top:110px;
+
+}
+/*右侧内容*/
+/*菜单一*/
+.main .one{
+	/*border:solid black 1px;*/
+	width:296px;
+	height:97px;
+	position:absolute;
+	top:0px;
+	right:0px;
+	background-color:white;
+	border: solid 1px #f0f2f7;
+}
+.main .one ul li{
+	/*border:solid 1px black;*/
+	width:48px;
+	height:50px;
+	margin:23px;
+	float:left;
+	background-color:white;
+}
+.main .one ul li i{
+	font-size:24px;
+	background-color: white;
+	margin-left:10px;
+	margin-bottom:10px;
+	color:#8590a6;
+	cursor:pointer;
+}
+.main .one ul li p{
+	background-color: white;
+	cursor:pointer;
+}
+.main .one ul li p:hover{
+	color:#175199;
+}
+/*菜单二*/
+.main .two{
+	width:296px;
+	height:175px;
+	position:absolute;
+	top:107px;
+	right:0px;
+	background-color:white;
+	border: solid 1px #f0f2f7;
+}
+.main .two ul li{
+	/*border:solid 1px black;*/
+	width:91px;
+	height:55px;
+	float:left;
+	margin:20px 0px 20px 4px;
+	background-color:white;
+}
+.main .two ul li p{
+	text-align: center;
+	background-color: white;
+	color:#8590a6;
+}
+.main .two ul li i{
+	font-size: 20px;
+	margin-left:35px;
+	background-color: white;
+	margin-bottom:20px;
+}
+.main .two ul .live i{
+	color:rgb(255, 207, 0);
+}
+.main .two ul .live p:hover{
+	color:rgb(255, 207, 0);
+}
+.main .two ul .shudian i{
+	color:rgb(67, 212, 128);
+}
+.main .two ul .shudian p:hover{
+	color:rgb(67, 212, 128);
+}
+.main .two ul .yuanzhuo i{
+	color:rgb(0, 132, 255);
+}
+.main .two ul .yuanzhuo p:hover{
+	color:rgb(0, 132, 255);
+}
+.main .two ul .zhuanlan i{
+	color:rgb(15, 136, 235);
+}
+.main .two ul .zhuanlan p:hover{
+	color:rgb(15, 136, 235);
+}
+.main .two ul .fufei i{
+	color:rgb(84, 120, 240);
+}
+.main .two ul .fufei p:hover{
+	color:rgb(84, 120, 240);
+}
+/*广告*/
+.main .ad img{
+	width:296px;
+	height:246px;
+	position:absolute;
+	top:292px;
+	right:0;
+	border-radius:3px;
+	cursor:pointer;
+}
+/*菜单三*/
+.main .three{
+	width:296px;
+	height:200px;
+	padding:8px 0;
+	position:absolute;
+	top:548px;
+	right:0px;
+	background-color:white;
+	border: solid 1px #f0f2f7;
+}
+.main .three ul li{
+	width:256px;
+	height:40px;
+	padding:0 20px;
+	background-color:white;
+	color:#8590a6;
+	cursor:pointer;
+}
+.main .three ul li i{
+	font-size:18px;
+	background-color: white;
+	margin-right: 10px;
+	line-height: 40px;
+}
+.main .three ul li:hover{
+	background-color: #f6f6f6;
+}
+.main .three ul li div{
+	float:right;
+	width:7px;
+	height:16px;
+	padding:6px 10px;
+	margin-top:7px;
+	border-radius: 3px;
+	background-color: #f6f6f6;
+	line-height: 16px;
+}
+.main .three ul li div:hover{
+	background-color:#fff;
+}
